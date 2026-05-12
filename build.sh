@@ -28,8 +28,8 @@ cmake -S. -Bbuild -G"Ninja Multi-Config" -DCMAKE_INSTALL_PREFIX=$DISTDIR -DHTTP_
 cmake --build build --config Release --target install
 cd ..
 
-# Install yaml-cpp
-git clone --recursive --shallow-submodules --filter=blob:none --also-filter-submodules https://github.com/jbeder/yaml-cpp
+# Install yaml-cpp    yaml-cpp master break subconverter 0.9.2
+git clone --recursive --shallow-submodules --filter=blob:none --also-filter-submodules https://github.com/jbeder/yaml-cpp --branch yaml-cpp-0.9.0
 cd yaml-cpp
 cmake -S. -Bbuild -G"Ninja Multi-Config" -DCMAKE_INSTALL_PREFIX=$DISTDIR -DYAML_CPP_BUILD_TESTS=OFF -DYAML_CPP_BUILD_TOOLS=OFF
 cmake --build build --config Release --target install
