@@ -83,11 +83,11 @@ cmake --build build --config Release --target all
 
 
 
+### Fifv: wtf is these??
 
 
-
-# Clean up
-rm subconverter
-
-# Compile the final executable
-g++ -o base/subconverter $(find build/CMakeFiles/subconverter.dir/Release/src/ -name "*.o") -L$DISTDIR/lib -static -lpcre2-8 -lyaml-cpp -L$DISTDIR/lib64 -lcurl -lmbedtls -lmbedcrypto -lmbedx509 -lz -l:$DISTDIR/lib/quickjs/libquickjs.a -llibcron -O3 -s
+# # Clean up
+# rm subconverter
+#
+# # Compile the final executable
+# g++ -o base/subconverter $(find build/CMakeFiles/subconverter.dir/Release/src/ -name "*.o") -L$DISTDIR/lib -static -lpcre2-8 -lyaml-cpp -L$DISTDIR/lib64 -lcurl -lmbedtls -lmbedcrypto -lmbedx509 -lz -l:$DISTDIR/lib/quickjs/libquickjs.a -llibcron -O3 -s
